@@ -39,7 +39,7 @@
 
 
 # 결과
-<img src="https://github.com/k2520624/blur-project/assets/75367132/75334a71-3811-4600-90bc-002e68da9ef2" width="640" height="480"/>
+<img src="https://github.com/k2520624/blur-project/assets/75367132/75334a71-3811-4600-90bc-002e68da9ef2" width="940" height="480"/>
 
 - 이미지나 영상을 시스템에 업로드 했을 때 등록된 사용자 외에는 unknown으로 사용자의 이름이 저장되고 unknown이 표시된 얼굴을 블러 처리
 - 해당 사진은 비쥬얼라이징을 통해 시각적으로 설명하기 위한 것으로 실제로는 바운딩 박스와 이름이 제거된 상태로 결과가 반환됨
