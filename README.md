@@ -8,7 +8,8 @@
 
 # 구현 내용
 - 영상이나 이미지를 업로드 했을 때 등록된 사용자 이외에 모르는 얼굴이 감지되면 블러 처리
-
+<img src="https://github.com/k2520624/blur-project/assets/75367132/80668986-4c8d-409b-9a95-12ded8c0aeb0" width="640" height="480"/>
+<img src="https://github.com/k2520624/blur-project/assets/75367132/09a7572e-7c92-4c97-8258-892d64127c8b" width="640" height="480"/>
 # 학습
 #### 이미지 전처리
 - 수집한 이미지를 yolo 모델에 사용할수있게 전처리 진행
@@ -26,16 +27,10 @@
 
 #### 저장
 - numpy 라이브러리의 np.savez_compressed 함수를 사용하여 얼굴 특징 벡터와 해당하는 이미지 이름을 압축된 numpy 배열 형식으로 저장(.npz)
-<img src="https://github.com/k2520624/blur-project/assets/75367132/80668986-4c8d-409b-9a95-12ded8c0aeb0" width="640" height="480"/>
-
 
 # 실행
 - Yolo모델에서 학습이 가능하도록 라벨을 Yolo모델에 맞게 변형(class, x_center, y_center, width, height)
 - KITTI데이터에서 거리가 추가된 Yolo모델 라벨 형태로 변형(class, x_center, y_center, width, height, distance)
-
-
-<img src="https://github.com/k2520624/blur-project/assets/75367132/09a7572e-7c92-4c97-8258-892d64127c8b" width="640" height="480"/>
-
 
 
 # 결과
