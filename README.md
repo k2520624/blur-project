@@ -34,16 +34,15 @@
 
 <img src="https://github.com/k2520624/blur-project/assets/75367132/09a7572e-7c92-4c97-8258-892d64127c8b" width="640" height="480"/>
 
-- Yolo모델에서 학습이 가능하도록 라벨을 Yolo모델에 맞게 변형(class, x_center, y_center, width, height)
-- KITTI데이터에서 거리가 추가된 Yolo모델 라벨 형태로 변형(class, x_center, y_center, width, height, distance)
+- 학습과 같은 방식으로 영상이나 이미지에서 검출되는 모든 얼굴을 인식하고 특징점을 검출
+- 이미지에서 검출된 특징과 저장된 특징을 비교하여 유사도가 일정 기준치를 넘어가지 못하면 블러처리
 
 
 # 결과
+<img src="https://github.com/k2520624/blur-project/assets/75367132/75334a71-3811-4600-90bc-002e68da9ef2" width="640" height="480"/>
 
-<img src="https://github.com/SeungHeon3649/Yolov7_with_JetsonNano/assets/94602281/e1395968-107c-4dee-8e52-5e0ce601822b" width="480" height="320"/>
-
-- 이 사진과 같이 차선 변경을 위해 방향지시등을 켰을 때, 옆에 차량이 없으면서 후방에 차량의 추돌 위험성도 없으면 청각적인 신호를 통해 운전자에게 알려줌
-- 해당 사진은 비쥬얼라이징을 통해 시각적으로 설명하기 위한 것으로 실제 JetsonNano에 탑제 될 때는 비쥬얼라이징하는 코드는 전부 성능을 위해 제거함
+- 이미지나 영상을 시스템에 업로드 했을 때 등록된 사용자 외에는 unknown으로 사용자의 이름이 저장되고 unknown이 표시된 얼굴을 블러 처리
+- 해당 사진은 비쥬얼라이징을 통해 시각적으로 설명하기 위한 것으로 실제로는 바운딩 박스와 이름이 제거된 상태로 결과가 반환됨
 
 # 특이점
 - JetsonNano라는 제한된 하드웨어에서 성능을 내기 위한 작업이 많이 힘들었음
